@@ -1,0 +1,51 @@
+{
+  "name": "Mirrorboard",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Mirrorboard (xkcd) keyboard",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "input"
+  ],
+  "input_components": [
+    {
+      "name": "Mirrorboard",
+      "type": "ime",
+      "id": "mirrorboard",
+      "description": "Mirrorboard (xkcd) keyboard",
+      "language": "en-US",
+      "layouts": ["us"]
+    }
+  ],
+  "commands": {
+    "E": {
+      "suggested_key": {
+        "default": "Alt+E"
+      },
+      "description": "Block Chrome shortcut (e->E)"
+    },
+    "D": {
+      "suggested_key": {
+        "default": "Alt+D"
+      },
+      "description": "Block Chrome shortcut (d->D)"
+    },
+    "F": {
+      "suggested_key": {
+        "default": "Alt+F"
+      },
+      "description": "Block Chrome shortcut (f->F)"
+    },
+    "L": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Block Alt+Shift+S (S->L)"
+    }
+  }
+}
